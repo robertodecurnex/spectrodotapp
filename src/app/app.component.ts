@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent implements OnInit {
-  title = 'Spectro',
+  title = 'Spectro';
 
-  redirectionUrl = 'https://github.com/robertodecurnex/spectro',
+  redirectionUrl = 'https://github.com/robertodecurnex/spectro';
 
   ngOnInit() {
     window.location.replace(this.redirectionUrl);
