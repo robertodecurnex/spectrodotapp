@@ -5,6 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Spectro';
+
+export class AppComponent implements OnInit {
+  title = 'Spectro',
+
+  redirectionUrl = 'https://github.com/robertodecurnex/spectro',
+
+  ngOnInit() {
+    window.location.replace(this.redirectionUrl);
+  }
 }
